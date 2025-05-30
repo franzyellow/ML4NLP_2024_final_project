@@ -1,0 +1,31 @@
+Classification Metrics Report
+The gold is retrieved from: ./final_input_onehot_features.conll.
+The predictions are retrieved from: ./ablations/test_pred_token_pos_tag_syntactic_tag_uppercase_prev_uppercase_next_uppercase_prefix_suffix.conll.
+              precision    recall  f1-score   support
+
+       B-LOC      0.818     0.788     0.802      1668
+      B-MISC      0.758     0.709     0.733       702
+       B-ORG      0.824     0.560     0.667      1661
+       B-PER      0.656     0.863     0.745      1617
+       I-LOC      0.679     0.584     0.628       257
+      I-MISC      0.582     0.593     0.587       216
+       I-ORG      0.525     0.582     0.552       835
+       I-PER      0.770     0.887     0.824      1156
+           O      0.989     0.986     0.987     38323
+
+    accuracy                          0.941     46435
+   macro avg      0.733     0.728     0.725     46435
+weighted avg      0.944     0.941     0.941     46435
+
+Confusion Matrix
+[[ 1314    21    79   178     8     5    28     6    29]
+ [   18   498    38    64     0    10    19     4    51]
+ [  194    41   930   317     0     7    54    29    89]
+ [   22    18    31  1395     1     1    38    34    77]
+ [    7     0     0     0   150     4    52    32    12]
+ [    0    16     0     2     3   128    11    21    35]
+ [   31     8    18    17    50    10   486   106   109]
+ [    5     3     0    23     3     0    68  1025    29]
+ [   16    52    32   132     6    55   169    75 37786]]
+Labels
+['B-LOC', 'B-MISC', 'B-ORG', 'B-PER', 'I-LOC', 'I-MISC', 'I-ORG', 'I-PER', 'O']
