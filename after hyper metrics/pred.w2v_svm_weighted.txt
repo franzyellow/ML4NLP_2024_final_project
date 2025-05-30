@@ -1,0 +1,16 @@
+Weighted Classification Report:
+B-LOC: Precision=0.953, Recall=0.945, F1-Score=0.949, Support=1837
+B-MISC: Precision=0.935, Recall=0.898, F1-Score=0.916, Support=922
+B-ORG: Precision=0.924, Recall=0.908, F1-Score=0.916, Support=1341
+B-PER: Precision=0.960, Recall=0.970, F1-Score=0.965, Support=1842
+I-LOC: Precision=0.924, Recall=0.854, F1-Score=0.888, Support=257
+I-MISC: Precision=0.882, Recall=0.760, F1-Score=0.816, Support=346
+I-ORG: Precision=0.879, Recall=0.811, F1-Score=0.844, Support=751
+I-PER: Precision=0.980, Recall=0.977, F1-Score=0.978, Support=1307
+O: Precision=0.993, Recall=0.997, F1-Score=0.995, Support=42759
+
+Macro Average:
+Precision=0.937, Recall=0.902, F1-Score=0.919
+
+Weighted Average:
+Precision=0.985, Recall=0.985, F1-Score=0.985
