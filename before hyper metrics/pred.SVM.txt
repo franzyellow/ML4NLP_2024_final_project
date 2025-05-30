@@ -1,0 +1,31 @@
+Classification Metrics Report
+The gold is retrieved from: conll2003.dev.conll.
+The predictions are retrieved from: pred.SVM.conll.
+              precision    recall  f1-score   support
+
+       B-LOC      0.896     0.911     0.903      1837
+      B-MISC      0.907     0.838     0.871       922
+       B-ORG      0.887     0.811     0.847      1341
+       B-PER      0.900     0.914     0.907      1842
+       I-LOC      0.872     0.821     0.846       257
+      I-MISC      0.869     0.688     0.768       346
+       I-ORG      0.818     0.768     0.793       751
+       I-PER      0.905     0.959     0.931      1307
+           O      0.992     0.997     0.995     42759
+
+    accuracy                          0.976     51362
+   macro avg      0.894     0.856     0.873     51362
+weighted avg      0.975     0.976     0.975     51362
+
+Confusion Matrix
+[[ 1673    10    58    41     6     0    10     3    36]
+ [   25   773    25    28     0     4     5     3    59]
+ [   73    24  1087    85     1     0    27     8    36]
+ [   49     7    13  1684     0     1    10    18    60]
+ [    7     0     1     0   211     3    11    15     9]
+ [    3    21     7     2     2   238    10    21    42]
+ [   21     5    13     3    16    12   577    43    61]
+ [    6     0     2     6     3     2    11  1253    24]
+ [   10    12    19    22     3    14    44    20 42615]]
+Labels
+['B-LOC', 'B-MISC', 'B-ORG', 'B-PER', 'I-LOC', 'I-MISC', 'I-ORG', 'I-PER', 'O']
